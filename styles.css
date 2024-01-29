@@ -1,0 +1,132 @@
+/* Colors */
+:root {
+  --main-text-color-darkmode: #ffffff;
+  --secondary-text-color-darkmode: #efe0ca;
+  --main-link-color-darkmode: #d7b876;
+  --main-code-color-darkmode: #42c5af;
+  --content-divider-darkmode: #666666;
+  --background-darkmode: #333333;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Text";
+  src: url(./fonts/OpenSans-Regular-webfont.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url(./fonts/OpenSans-Bold-webfont.ttf);
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Code";
+  src: url(./fonts/SourceCodePro-Regular.ttf);
+  font-display: swap;
+}
+
+/* Top level definitions */
+
+h1 {
+  font-size: 1.5em;
+  font-family: "Text";
+}
+
+html {
+  background-color: var(--background-darkmode);
+}
+
+body {
+  color: var(--main-text-color-darkmode);
+  font-family: "Text";
+  font-size: 16px;
+}
+
+a {
+  color: var(--main-link-color-darkmode);
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+code {
+  font-family: "Code", inherit;
+  color: var(--main-code-color-darkmode);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  color: var(--main-text-color-darkmode);
+}
+
+.title {
+    text-align: center;
+}
+
+.logline {
+    text-align: center;
+}
+
+.content {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 40px 0 40px;
+  text-align: left;
+}
+
+/* 900px x 230px */
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* Image in index.html */
+.index-image {
+    width: 192px;
+    height: 108px;
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    /* padding-right: 2em; */
+    /* padding-bottom: 1em; */
+}
+
+.article-image {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.author {
+    color: var( --main-text-color-darkmode);
+    font-family: "Text";
+    font-size: 0.9em;
+}
+
+/* Dotted divider */
+hr {
+    border: 1px dashed var(--content-divider-darkmode);
+}
+
+/* Format the footer */
+#postamble {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 40px 0 40px;
+    text-align: left;
+}
